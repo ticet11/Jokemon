@@ -1,3 +1,9 @@
+# React Router Practice Site.
+
+On the shop page, you will generate 10 Chuck Norris jokes from an API. Each of those jokes is a link. When you click on that link a pokemon's name and sprite will be displayed, who's number aligns with the id of the joke.
+
+The base of this project was following along with [this tutorial](https://youtu.be/Law7wfdg_ls). 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
