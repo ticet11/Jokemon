@@ -4,7 +4,6 @@ import "./App.css";
 export default function ItemDetail({ match }) {
     useEffect(() => {
         fetchJoke();
-        console.log(match);
     }, []);
 
     const [joke, setJoke] = useState({
@@ -17,7 +16,6 @@ export default function ItemDetail({ match }) {
         );
         const joke = await fetchJoke.json();
         setJoke(joke);
-        console.log(joke);
     };
     return (
         <div>

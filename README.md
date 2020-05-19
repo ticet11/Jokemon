@@ -1,6 +1,11 @@
 # React Router Practice Site.
 
-On the shop page, you will generate 10 Chuck Norris jokes from an API. Each of those jokes is a link. When you click on that link a pokemon's name and sprite will be displayed, who's number aligns with the id of the joke.
+On the shop page, a list of 10 Chuck Norris jokes are generated from an API. Each of those jokes is a link. When you click on that link a pokemon's name and sprite will be displayed, who's number aligns with the id of the joke, according to both APIs.
+
+## APIs used
+* [Chuck Norris Database](http://www.icndb.com/api/)
+* [Pokéapi](https://pokeapi.co/)
+
 
 The base of this project was following along with [this tutorial](https://youtu.be/Law7wfdg_ls). 
 

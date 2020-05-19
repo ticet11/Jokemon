@@ -30,6 +30,7 @@ function App() {
 const Home = () => (
     <div>
         <h1>Home</h1>
+        <p>The only good content is in the shop.</p>
     </div>
 );
 

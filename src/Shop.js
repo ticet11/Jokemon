@@ -15,7 +15,6 @@ export default function Shop() {
             "http://api.icndb.com/jokes/random/10"
         );
         const jokes = await data.json();
-        console.log(jokes.value);
         setJokes(jokes.value);
     };
     return (
