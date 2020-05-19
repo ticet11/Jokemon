@@ -12,7 +12,7 @@ export default function Shop() {
 
     const fetchJokes = async () => {
         const data = await fetch(
-            "http://api.icndb.com/jokes/random/10?exclude=[explicit]"
+            "https://api.icndb.com/jokes/random/10?exclude=[explicit]"
         );
         const jokes = await data.json();
         setJokes(jokes.value);
