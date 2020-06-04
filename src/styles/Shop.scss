@@ -1,0 +1,17 @@
+.joke-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+
+        .joke-link {
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(87, 13, 13);
+            min-height: 50px
+        }
+    }
+}

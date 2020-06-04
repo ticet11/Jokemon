@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import "./App.css";
-
 export default function Shop() {
     useEffect(() => {
         fetchJokes();
@@ -18,12 +16,18 @@ export default function Shop() {
         setJokes(jokes.value);
     };
     return (
-        <div>
-            {jokes.map((joke) => (
-                <p key={joke.id}>
-                    <Link to={`/shop/${joke.id}`}>{joke.joke.split('&quot;').join('"')}</Link>
-                </p>
-            ))}
+        <div className="shop-container">
+            <h1>Click on a joke for a fun surprise!</h1>
+
+            <div className="joke-container">
+                {jokes.map((joke) => (
+                    <Link key={joke.id} to={`/projects/jokemon/shop/${joke.id}`}>
+                        <div className="joke-link">
+                            {joke.joke.split("&quot;").join('"')}
+                        </div>
+                    </Link>
+                ))}
+            </div>
         </div>
     );
 }

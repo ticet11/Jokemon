@@ -7,9 +7,10 @@ import {
 
 import ItemDetail from './ItemDetail';
 import Nav from "./Nav";
-import About from "./About";
-import Shop from "./Shop";
-import "./App.css";
+import About from "./pages/About";
+import Shop from "./pages/Shop";
+import "./styles/App.css";
+import "./styles/Shop.scss";
 
 function App() {
     return (
@@ -17,10 +18,10 @@ function App() {
             <div className="App">
                 <Nav />
                 <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/shop" exact component={Shop} />
-                    <Route path='/shop/:id' component={ItemDetail} />
+                    <Route exact path="/projects/jokemon/" component={Home} />
+                    <Route path="/projects/jokemon/about" component={About} />
+                    <Route path="/projects/jokemon/shop" exact component={Shop} />
+                    <Route path='/projects/jokemon/shop/:id' component={ItemDetail} />
                 </Switch>
             </div>
         </Router>
