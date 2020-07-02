@@ -22,11 +22,12 @@ export default function ItemDetail({ match }) {
     };
     return (
         <div>
+            <h1>A wild pokemon appears!</h1>
             {isLoading ? (
                 <div>Loading...</div>
             ) : (
                 <div>
-                    <h1>{joke.name}</h1>
+                    <h2>{joke.name}</h2>
                     <img src={joke.sprites.front_default} alt="" />
                 </div>
             )}
