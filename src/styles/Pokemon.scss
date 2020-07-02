@@ -9,9 +9,19 @@
         url("./fonts/PokemonGb.svg") format("svg");
 }
 
-.pokemon-card {
-    font-family: pokemonGB;
-    font-size: .6em;
-    width: 30%;
-    border: 1px black solid;
+.pokemon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pokemon-card {
+        margin-top: 20px;
+        padding: 20px;
+        font-family: pokemonGB;
+        font-size: .6em;
+        width: 35%;
+        border: 5px black solid;
+        border-radius: 5px;
+    }
 }
+

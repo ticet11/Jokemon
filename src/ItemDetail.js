@@ -20,7 +20,7 @@ export default function ItemDetail({ match }) {
         setIsLoading(false);
     };
     return (
-        <div>
+        <div className='pokemon-container'>
             <h1>A wild pokemon appears!</h1>
             {isLoading ? (
                 <div>Loading...</div>
