@@ -7,6 +7,7 @@ export default function Shop() {
     }, []);
 
     const [jokes, setJokes] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     const fetchJokes = async () => {
         const data = await fetch(
@@ -14,20 +15,27 @@ export default function Shop() {
         );
         const jokes = await data.json();
         setJokes(jokes.value);
+        setIsLoading(false);
     };
+
     return (
         <div className="shop-container">
             <h1>Click on a joke for a fun surprise!</h1>
 
-            <div className="joke-container">
-                {jokes.map((joke) => (
-                    <Link key={joke.id} to={`/projects/jokemon/shop/${joke.id}`}>
-                        <div className="joke-link">
-                            {joke.joke.split("&quot;").join('"')}
-                        </div>
-                    </Link>
-                ))}
-            </div>
+            {isLoading ? <div>Loading...</div> : (
+                <div className="joke-container">
+                    {jokes.map((joke) => (
+                        <Link
+                            key={joke.id}
+                            to={`/projects/jokemon/shop/${joke.id}`}
+                        >
+                            <div className="joke-link">
+                                {joke.joke.split("&quot;").join('"')}
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+            )}
         </div>
     );
 }
