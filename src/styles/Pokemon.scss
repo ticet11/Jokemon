@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "pokemonGB";
+    src: url("./fonts/PokemonGb.eot");
+    src: url("./fonts/PokemonGb.eot#iefix")
+            format("embedded-opentype"),
+        url("./fonts/PokemonGb.woff2") format("woff2"),
+        url("./fonts/PokemonGb.woff") format("woff"),
+        url("./fonts/PokemonGb.ttf") format("truetype"),
+        url("./fonts/PokemonGb.svg") format("svg");
+}
+
+.pokemon-card {
+    font-family: pokemonGB;
+    font-size: .6em;
+    width: 30%;
+    border: 1px black solid;
+}

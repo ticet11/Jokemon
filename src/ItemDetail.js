@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./styles/App.css";
 
 export default function ItemDetail({ match }) {
     useEffect(() => {
@@ -26,9 +25,13 @@ export default function ItemDetail({ match }) {
             {isLoading ? (
                 <div>Loading...</div>
             ) : (
-                <div>
-                    <h2>{joke.name}</h2>
+                <div className="pokemon-card">
                     <img src={joke.sprites.front_default} alt="" />
+                    <h2>
+                        {joke.name.charAt(0).toUpperCase() +
+                            joke.name.slice(1)}{" "}
+                        uses {joke.moves[0].move.name}!
+                    </h2>
                 </div>
             )}
         </div>

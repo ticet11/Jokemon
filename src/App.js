@@ -9,8 +9,8 @@ import ItemDetail from './ItemDetail';
 import Nav from "./Nav";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
-import "./styles/App.css";
-import "./styles/Shop.scss";
+
+import "./styles/Main.scss";
 
 function App() {
     return (
