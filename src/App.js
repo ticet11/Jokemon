@@ -5,8 +5,8 @@ import {
     Route,
 } from "react-router-dom";
 
-import ItemDetail from './ItemDetail';
-import Nav from "./Nav";
+import ItemDetail from './pages/ItemDetail';
+import Nav from "./components/Nav";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
 
