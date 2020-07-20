@@ -1,17 +1,22 @@
-.joke-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+.shop-container {
+    h3 {
+        margin-bottom: 10px;
+    }
+    .joke-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
 
-    a {
-        text-decoration: none;
+        a {
+            text-decoration: none;
 
-        .joke-link {
-            color: white;
-            padding: 10px;
-            border: 1px solid black;
-            background-color: #570d0d;
-            min-height: 50px
+            .joke-link {
+                color: white;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: #570d0d;
+                min-height: 50px;
+            }
         }
     }
 }

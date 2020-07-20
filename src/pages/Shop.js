@@ -21,6 +21,7 @@ export default function Shop() {
     return (
         <div className="shop-container">
             <h1>Click on a joke for a fun surprise!</h1>
+            <h3>Sorry if you were hoping to buy something.</h3>
 
             {isLoading ? <div>Loading...</div> : (
                 <div className="joke-container">
