@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 import ItemDetail from "./pages/ItemDetail";
 import Nav from "./components/Nav";
@@ -8,16 +9,18 @@ import Shop from "./pages/Shop";
 
 import "./styles/Main.scss";
 
+let history = createBrowserHistory();
+
 function App() {
 	return (
-		<Router>
+		<Router history={history} basename={process.env.PUBLIC_URL}>
 			<div className="App">
 				<Nav />
 				<Switch>
 					<Route exact path="/" component={Home} />
-					<Route path="/about" component={About} />
-					<Route path="/shop" exact component={Shop} />
-					<Route path="/shop/:id" component={ItemDetail} />
+					<Route exact path="/about" component={About} />
+					<Route exact path="/shop" exact component={Shop} />
+					<Route exact path="/shop/:id" component={ItemDetail} />
 				</Switch>
 			</div>
 		</Router>
