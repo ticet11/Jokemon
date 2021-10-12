@@ -1,4 +1,4 @@
-# React Router Practice Site.
+# React Router Practice Site
 
 On the shop page, a list of 10 Chuck Norris jokes are generated from
 an API. Each of those jokes is a link. When you click on that link a
@@ -7,12 +7,12 @@ the id of the joke, according to both APIs.
 
 ## APIs used
 
--   [Chuck Norris Database](http://www.icndb.com/api/)
--   [Pokéapi](https://pokeapi.co/)
+- [Chuck Norris Database](http://www.icndb.com/api/)
+- [Pokéapi](https://pokeapi.co/)
 
 ## External Fonts
 
--   [PokemonGB](https://www.fontspace.com/pokemon-gb-font-f9621)
+- [PokemonGB](https://www.fontspace.com/pokemon-gb-font-f9621)
 
 The base of this project was following along with
 [this tutorial](https://youtu.be/Law7wfdg_ls).
@@ -85,29 +85,29 @@ To learn React, check out the
 ### Code Splitting
 
 This section has moved here:
-https://facebook.github.io/create-react-app/docs/code-splitting
+<https://facebook.github.io/create-react-app/docs/code-splitting>
 
 ### Analyzing the Bundle Size
 
 This section has moved here:
-https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size>
 
 ### Making a Progressive Web App
 
 This section has moved here:
-https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app>
 
 ### Advanced Configuration
 
 This section has moved here:
-https://facebook.github.io/create-react-app/docs/advanced-configuration
+<https://facebook.github.io/create-react-app/docs/advanced-configuration>
 
 ### Deployment
 
 This section has moved here:
-https://facebook.github.io/create-react-app/docs/deployment
+<https://facebook.github.io/create-react-app/docs/deployment>
 
 ### `npm run build` fails to minify
 
 This section has moved here:
-https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify>
