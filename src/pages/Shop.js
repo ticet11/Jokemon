@@ -10,8 +10,11 @@ export default function Shop() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	const fetchJokes = async () => {
-		const data = await fetch("https://api.icndb.com/jokes/random/10?exclude=[explicit]");
+		const data = await fetch(
+			"https://cors-proxy.briankozub.workers.dev/?url=https://api.chucknorris.io/jokes/random"
+		);
 		const jokes = await data.json();
+		console.log(jokes)
 		setJokes(jokes.value);
 		setIsLoading(false);
 	};
