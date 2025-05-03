@@ -10,12 +10,21 @@ export default function Shop() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	const fetchJokes = async () => {
-		const data = await fetch(
-			"https://cors-proxy.briankozub.workers.dev/?url=https://api.chucknorris.io/jokes/random"
-		);
-		const jokes = await data.json();
-		console.log(jokes)
-		setJokes(jokes.value);
+		const jokes = [];
+		for (let i = 0; i < 10; i++) {
+			const data = await fetch(
+				"https://cors-proxy.briankozub.workers.dev/?url=https://api.chucknorris.io/jokes/random?category=dev"
+			);
+			const res = await data.json();
+			const dateString = res.created_at;
+			const id = Number(dateString.slice(-3));
+			const jokeObj = {
+				id,
+				joke: res.value
+			};
+			jokes.push(jokeObj);
+		}
+		setJokes(jokes);
 		setIsLoading(false);
 	};
 
